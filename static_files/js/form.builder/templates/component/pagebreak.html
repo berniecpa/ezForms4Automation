@@ -1,0 +1,22 @@
+<!-- Page Break -->
+<div class="col-12">
+    <div class="form-action">
+        <button type="button" class="btn btn-default me-1 prev" data-exclude="true">
+            {{ if (field.prev) { }}
+                {{= field.prev }}
+            {{ } else { }}
+                {{= polyglot.t('pagebreak.prev') }}
+            {{ } }}
+        </button>
+        <button type="button" class="btn btn-primary next" data-exclude="true">
+            {{ if (field.next) { }}
+                {{= field.next }}
+            {{ } else { }}
+                {{= polyglot.t('pagebreak.next') }}
+            {{ } }}
+        </button>
+    </div>
+    <div class="hr-text">
+        <span>{{= polyglot.t('widget.pageBreak') }}</span>
+    </div>
+</div>

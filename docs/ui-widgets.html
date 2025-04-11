@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/36529fa/favicon/favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/36529fa/favicon/favicon_32.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/36529fa/favicon/favicon_48.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/36529fa/favicon/favicon_96.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="./assets/36529fa/favicon/favicon_144.ico"/>
+        <link href="./assets/9fcafb20/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/7f4cd63a/github-gist.css" rel="stylesheet">
+<link href="./assets/36529fa/css/fonts.min.css" rel="stylesheet">
+<link href="./assets/36529fa/css/bootstrap.min.css" rel="stylesheet">
+<link href="./assets/36529fa/css/api.css" rel="stylesheet">
+<link href="./assets/36529fa/css/style.css" rel="stylesheet">
+<script src="./assets/e0638a1d/jquery.js"></script>
+<script src="./assets/9fcafb20/js/bootstrap.js"></script>
+<script src="./assets/4679402/jssearch.js"></script>    <title>UI Widgets - Forms - Easy Forms</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w658" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w658-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html"><span class="app-name">Easy Forms</span></a></div><div id="w658-collapse" class="collapse navbar-collapse"><ul id="w659" class="navbar-nav nav"><li><a href="./index.html">Documentation</a></li></ul>
+    <div class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+            <input id="searchbox" type="text" class="form-control" placeholder="Search">
+        </div>
+    </div>
+    </div></div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    <div class="container">
+        
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-650" data-toggle="collapse" data-parent="#navigation">First steps <b class="caret"></b></a><div id="navigation-650" class="submenu panel-collapse collapse"><a class="list-group-item" href="./intro-easy-forms.html">About Easy Forms</a>
+<a class="list-group-item" href="./system-requirements.html">Requirements</a>
+<a class="list-group-item" href="./start-installation.html">Installing Easy Forms</a>
+<a class="list-group-item" href="./start-upgrading.html">Upgrading Easy Forms</a>
+<a class="list-group-item" href="./settings.html">Set Up Easy Forms</a>
+<a class="list-group-item" href="./start-customization.html">Customizing Easy Forms</a>
+<a class="list-group-item" href="./email-setup.html">Email Setup</a>
+<a class="list-group-item" href="./dynamic-content.html">Dynamic Content</a></div>
+<a class="list-group-item active" href="#navigation-651" data-toggle="collapse" data-parent="#navigation">Forms <b class="caret"></b></a><div id="navigation-651" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./form-manager.html">Form Manager</a>
+<a class="list-group-item" href="./form-builder.html">Form Builder</a>
+<a class="list-group-item" href="./theme-designer.html">Theme Designer</a>
+<a class="list-group-item active" href="./ui-widgets.html">UI Widgets</a>
+<a class="list-group-item" href="./rule-builder.html">Rule Builder</a>
+<a class="list-group-item" href="./folder-management.html">Folder Management</a>
+<a class="list-group-item" href="./submission-manager.html">Submission Manager</a>
+<a class="list-group-item" href="./form-report-builder.html">Report Builder</a>
+<a class="list-group-item" href="./form-analytics.html">In-App Analytics</a>
+<a class="list-group-item" href="./form-widget.html">Form Widget</a>
+<a class="list-group-item" href="./form-import-export.html">Import / Export</a></div>
+<a class="list-group-item" href="#navigation-652" data-toggle="collapse" data-parent="#navigation">Templates <b class="caret"></b></a><div id="navigation-652" class="submenu panel-collapse collapse"><a class="list-group-item" href="./template-manager.html">Template Manager</a></div>
+<a class="list-group-item" href="#navigation-653" data-toggle="collapse" data-parent="#navigation">Themes <b class="caret"></b></a><div id="navigation-653" class="submenu panel-collapse collapse"><a class="list-group-item" href="./theme-manager.html">Theme Manager</a></div>
+<a class="list-group-item" href="#navigation-654" data-toggle="collapse" data-parent="#navigation">Users <b class="caret"></b></a><div id="navigation-654" class="submenu panel-collapse collapse"><a class="list-group-item" href="./user-manager.html">User Manager</a>
+<a class="list-group-item" href="./membership.html">Membership</a></div>
+<a class="list-group-item" href="#navigation-655" data-toggle="collapse" data-parent="#navigation">Add-Ons <b class="caret"></b></a><div id="navigation-655" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-manager.html">Add-On Manager</a>
+<a class="list-group-item" href="./addon-webhooks.html">WebHooks</a>
+<a class="list-group-item" href="./addon-google-analytics.html">Google Analytics</a></div>
+<a class="list-group-item" href="#navigation-656" data-toggle="collapse" data-parent="#navigation">Premium Add-Ons <b class="caret"></b></a><div id="navigation-656" class="submenu panel-collapse collapse"><a class="list-group-item" href="./addon-acelle-mail.html">Acelle Mail</a>
+<a class="list-group-item" href="./addon-active-campaign.html">Active Campaign</a>
+<a class="list-group-item" href="./addon-adyen.html">Adyen</a>
+<a class="list-group-item" href="./addon-aweber.html">AWeber</a>
+<a class="list-group-item" href="./addon-braintree.html">Braintree</a>
+<a class="list-group-item" href="./addon-campaign-monitor.html">Campaign Monitor</a>
+<a class="list-group-item" href="./addon-cleverreach.html">CleverReach</a>
+<a class="list-group-item" href="./addon-conditional-emails.html">Conditional Emails</a>
+<a class="list-group-item" href="./addon-constant-contact.html">Constant Contact</a>
+<a class="list-group-item" href="./addon-custom-error-messages.html">Custom Error Messages</a>
+<a class="list-group-item" href="./addon-custom-data-validation.html">Data Validation</a>
+<a class="list-group-item" href="./addon-emailoctopus.html">EmailOctopus</a>
+<a class="list-group-item" href="./addon-eu-vat.html">EU VAT</a>
+<a class="list-group-item" href="./addon-facebook-login.html">Facebook Login</a>
+<a class="list-group-item" href="./addon-field-encryption.html">Field Encryption</a>
+<a class="list-group-item" href="./addon-google-places-autocomplete.html">Google Places Autocomplete</a>
+<a class="list-group-item" href="./addon-google-sheets.html">Google Sheets</a>
+<a class="list-group-item" href="./addon-hubspot-forms.html">HubSpot Forms</a>
+<a class="list-group-item" href="./addon-import-submissions.html">Import Submissions</a>
+<a class="list-group-item" href="./addon-insightly.html">Insightly</a>
+<a class="list-group-item" href="./addon-limit-choices.html">Limit Choices</a>
+<a class="list-group-item" href="./addon-mailchimp.html">MailChimp</a>
+<a class="list-group-item" href="./addon-mailwizz.html">MailWizz</a>
+<a class="list-group-item" href="./addon-mailerlite.html">MailerLite</a>
+<a class="list-group-item" href="./addon-microsoft-dynamics.html">Microsoft Dynamics 365</a>
+<a class="list-group-item" href="./addon-mysql.html">MySQL</a>
+<a class="list-group-item" href="./addon-neverbounce.html">NeverBounce</a>
+<a class="list-group-item" href="./addon-nexmo-sms.html">Nexmo SMS</a>
+<a class="list-group-item" href="./addon-paypal.html">PayPal</a>
+<a class="list-group-item" href="./addon-paypal-invoicing.html">PayPal Invoicing</a>
+<a class="list-group-item" href="./addon-pdf.html">PDF</a>
+<a class="list-group-item" href="./addon-plivo.html">Plivo SMS</a>
+<a class="list-group-item" href="./addon-salesforce.html">Salesforce</a>
+<a class="list-group-item" href="./addon-sendinblue.html">SendinBlue</a>
+<a class="list-group-item" href="./addon-smtp.html">SMTP</a>
+<a class="list-group-item" href="./addon-stripe.html">Stripe</a>
+<a class="list-group-item" href="./addon-twilio.html">Twilio SMS</a>
+<a class="list-group-item" href="./addon-zapier.html">Zapier</a>
+<a class="list-group-item" href="./addon-zoho-crm.html">Zoho CRM</a></div>
+<a class="list-group-item" href="#navigation-657" data-toggle="collapse" data-parent="#navigation">Premium Modules <b class="caret"></b></a><div id="navigation-657" class="submenu panel-collapse collapse"><a class="list-group-item" href="./module-subscriptions.html">Subscriptions</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>UI Widgets <span id="ui-widgets"></span><a href="#ui-widgets" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#introduction">Introduction</a></li>
+<li><a href="#how-to-use-a-ui-widget">How to use a UI Widget</a></li>
+<li><a href="#how-to-configure-a-ui-widget">How to configure a UI Widget</a></li>
+<li><a href="#custom-attributes-for-ui-widgets">Custom Attributes For UI Widgets</a></li></ol></div>
+<h2>Introduction <span id="introduction"></span><a href="#introduction" class="hashlink">&para;</a></h2><p><img src="images/ui-widgets.png" alt="Easy Forms - UI Widgets" /></p>
+<p>UI widgets are custom controls that improve the visualization of our Standard HTML5 fields. For example, we can use the "International Telephone Input" widget to display a Dropdown with flags and country codes as dynamic placeholders. Of course, we can customize them by making use of the Form Builder's custom attributes.</p>
+<h2>How to use a UI Widget  <span id="how-to-use-a-ui-widget"></span><a href="#how-to-use-a-ui-widget" class="hashlink">&para;</a></h2><p>Using UI widgets is pretty easy, just go to Form Settings &gt; UI Settings and select the UI widget you want to use in your form.</p>
+<p>For example, we are going to select the "International Telephone Input" widget and click Save.</p>
+<p><img src="images/how-to-use-a-ui-widget.png" alt="Easy Forms - UI Widgets - How to use a UI Widget" /></p>
+<p>Let's see the result.</p>
+<p><img src="images/how-to-use-a-ui-widget-2.png" alt="Easy Forms - UI Widgets - How to use a UI Widget - 2" /></p>
+<p>Take into account that some widgets require to add a Css Class to your Form Field. For others, like in our previous example, we only need to activate them to display them in the form.</p>
+<h2>How to configure a UI Widget <span id="how-to-configure-a-ui-widget"></span><a href="#how-to-configure-a-ui-widget" class="hashlink">&para;</a></h2><p>To configure the UI Widget we want to use, we need to go to the Form Builder &gt; Field Settings &gt; Custom Attributes.</p>
+<p>In our example, the International Telephone Inputs displays the User country flag. For this example, we are going to customize this behavior to display the flag of Great Britain. For this we are going to add the following custom attribute:</p>
+<ul>
+<li>Attribute: <strong>data-initial-country</strong></li>
+<li>Value: <strong>gb</strong></li>
+</ul>
+<p>And, Save all.</p>
+<p><img src="images/how-to-configure-a-ui-widget.png" alt="Easy Forms - UI Widgets - How to configure a UI Widget" /></p>
+<p>Let's see the result.</p>
+<p><img src="images/how-to-configure-a-ui-widget-2.png" alt="Easy Forms - UI Widgets - How to configure a UI Widget - 2" /></p>
+<h2>Custom Attributes For UI Widgets <span id="custom-attributes-for-ui-widgets"></span><a href="#custom-attributes-for-ui-widgets" class="hashlink">&para;</a></h2><p>Now we are going to list all the attributes we can use to configure the UI Widgets.</p>
+<h3>Flatpickr <span id="flatpickr"></span><a href="#flatpickr" class="hashlink">&para;</a></h3><p>Replace any Date field with a lightweight cross-browser datepicker.</p>
+<ul>
+<li><strong>data-alt-format</strong>: A string of characters which are used to define how the date will be displayed in the input box. For example: F j, Y</li>
+<li><strong>data-allow-invalid-preload</strong>: Allows the preloading of an invalid date. It can be true or false.</li>
+<li><strong>data-aria-date-format</strong>: Defines how the date will be formatted in the aria-label for calendar days. For example: F j, Y</li>
+<li><strong>data-default-date</strong>: Sets the initial selected date in HTML5 format (yyyy-mm-dd). For example: 2021-12-31</li>
+<li><strong>data-default-hour</strong>: Initial value of the hour element. For example: 12</li>
+<li><strong>data-default-minute</strong>: Initial value of the minute element. For example: 0</li>
+<li><strong>data-disable</strong>: A comma-separated dates in HTML5 format. For example: 2022-01-01,2022-01-02,2022-01-03</li>
+<li><strong>data-disable-mobile</strong>: Set to true to always use the non-native picker. It can be true or false.</li>
+<li><strong>data-enable-time</strong>: Enables time picker. It can be true or false.</li>
+<li><strong>data-enable-seconds</strong>: Enables seconds in the time picker. It can be true or false.</li>
+<li><strong>data-hour-increment</strong>: Adjusts the step for the hour input (incl. scrolling). For example: 1</li>
+<li><strong>data-inline</strong>: Displays the calendar inline. It can be true or false.</li>
+<li><strong>data-locale</strong>: Displays the calendar in a different language. It should be the country code, for example: es, fr, zh or de </li>
+<li><strong>data-max-date</strong>: The maximum date that a user can pick to (inclusive). For example: 2021-12-31</li>
+<li><strong>data-min-date</strong>: The minimum date that a user can start picking from (inclusive). For example: 2021-12-01</li>
+<li><strong>data-minute-increment</strong>: Adjusts the step for the minute input (incl. scrolling). For example: 5</li>
+<li><strong>data-mode</strong>: "single", "multiple", or "range". Date fields are only compatible with "single" mode, but you can use the others with Text fields.</li>
+<li><strong>data-next-arrow</strong>: HTML for the arrow icon, used to switch months. For example: &gt;</li>
+<li><strong>data-no-calendar</strong>: Hides the day selection in calendar. Use it along with "data-enable-time" to create a time picker. This is not compatible with a Date field, but you can use it with Text fields.</li>
+<li><strong>data-position</strong>: Where the calendar is rendered relative to the input vertically and horizontally In the format of "[vertical] [horizontal]". Vertical can be auto, above or below (required). Horizontal can be left, center or right. For example: "above" or "auto center"</li>
+<li><strong>data-prev-arrow</strong>: HTML for the left arrow icon. For example: &lt;</li>
+<li><strong>data-shorthand-current-month</strong>: Show the month using the shorthand version (ie, Sep instead of September). It can be true or false.</li>
+<li><strong>data-show-months</strong>: The number of months to be shown at the same time when displaying the calendar. For example: 1</li>
+<li><strong>data-time-24hr</strong>: Displays time picker in 24 hour mode without AM/PM selection when enabled. It can be true or false.</li>
+<li><strong>data-week-numbers</strong>: Enables display of week numbers in calendar.</li>
+<li><strong>data-month-selector-type</strong>: How the month should be displayed in the header of the calendar. It can be "dropdown" or "static". If "data-show-months" has a value greater than 1, the month is always shown as static.</li>
+</ul>
+<h3>International Telephone Input <span id="international-telephone-input"></span><a href="#international-telephone-input" class="hashlink">&para;</a></h3><p>Adds a flag dropdown to Phone fields and displays a relevant placeholder. The user types their national number and the plugin send the full standardized international number.</p>
+<ul>
+<li><strong>data-initial-country</strong>: It can be "auto" or a two-letter country code, for example: "us", "gb" or "it".</li>
+</ul>
+<h3>jQuery Mask <span id="jquery-mask"></span><a href="#jquery-mask" class="hashlink">&para;</a></h3><p>Make masks on form fields and HTML elements.</p>
+<ul>
+<li><strong>data-mask</strong>: To get your mask applied with the data-mask attribute just use it. For example: 00/00/0000</li>
+<li><strong>data-mask-placeholder</strong>: To add a placeholder to your mask. For example: "<strong>/</strong>/____"</li>
+<li><strong>data-mask-reverse</strong>: Activating a reversible mask. It can be true or false.</li>
+<li><strong>data-mask-clearifnotmatch</strong>: Clear field if not match. It can be true or false.</li>
+<li><strong>data-mask-selectonfocus</strong>: Select Mask On Focus. It can be true or false.</li>
+</ul>
+<p>Common values that you can add to the "data-mask" custom attribute:</p>
+<ul>
+<li>Date: 00/00/0000</li>
+<li>Time: 00:00:00</li>
+<li>DateTime: 00/00/0000 00:00:00</li>
+<li>CEP: 00000-000</li>
+<li>Phone: 0000-0000</li>
+<li>Phone with DDD: (00) 0000-0000</li>
+<li>US Phone: (000) 000-0000</li>
+<li>Mixed: AAA 000-S0S</li>
+<li>IP Address: 099.099.099.099</li>
+<li>Accept Only Numbers: 0#</li>
+</ul>
+<h3>jQuery Ui Datepicker <span id="jquery-ui-datepicker"></span><a href="#jquery-ui-datepicker" class="hashlink">&para;</a></h3><p>Select a date from a popup or inline calendar on any 'date' field.</p>
+<ul>
+<li><strong>data-date-format</strong>: The format for parsed and displayed dates. For example: mm/dd/yy</li>
+<li><strong>data-show-button-panel</strong>: Whether to display a button pane underneath the calendar. It can be true or false.</li>
+<li><strong>data-change-month</strong>: Whether the month should be rendered as a dropdown instead of text. It can be true or false.</li>
+<li><strong>data-change-year</strong>: Whether the year should be rendered as a dropdown instead of text. It can be true or false.</li>
+<li><strong>data-year-range</strong>: The range of years displayed in the year drop-down. For example: 2019:2022</li>
+<li><strong>data-number-of-months</strong>: The number of months to show at once. For example: 1</li>
+<li><strong>data-min-date</strong>: The minimum selectable date. For example, "+1m +7d" represents one month and seven days from today</li>
+<li><strong>data-max-date</strong>: The maximum selectable date. For example, "+1m +7d" represents one month and seven days from today.</li>
+<li><strong>data-is-rtl</strong>: Whether the current language is drawn from right to left. It can be true or false.</li>
+<li><strong>data-show-week</strong>: When true, a column is added to show the week of the year. It can be true or false.</li>
+<li><strong>data-first-day</strong>: Set the first day of the week: Sunday is 0, Monday is 1, etc.</li>
+</ul>
+<h3>jSuites JavaScript Input Mask <span id="jsuites-javascript-input-mask"></span><a href="#jsuites-javascript-input-mask" class="hashlink">&para;</a></h3><p>Enhance user input experience by providing masking functionality for input elements:</p>
+<ul>
+<li><strong>data-mask</strong>: Enables the input mask automatically, its value is the mask pattern. For example: $ #,##0.00.</li>
+</ul>
+<p>Common values that you can add to the "data-mask" custom attribute:</p>
+<ul>
+<li>What is your birthday? (Mask: dd/mm/yyyy)</li>
+<li>US Format (Mask: US #.##0,00)</li>
+<li>Percent mask (Mask: 0%)</li>
+<li>How many liters (Mask: 0.00 liters)</li>
+<li>EURO French Format (Mask: # ##0,00 €)</li>
+<li>DateTime yyyy-mm-dd hh24:mi</li>
+<li>CPF 000.000.000-00</li>
+</ul>
+<h3>Krajee File Input <span id="krajee-file-input"></span><a href="#krajee-file-input" class="hashlink">&para;</a></h3><p>Add the "file" css class to the file field to enhance the HTML 5 file input.</p>
+<ul>
+<li><strong>data-browse-label</strong>: The label to display for the file picker/browse button. Defaults to <em>Browse...</em></li>
+<li><strong>data-browse-icon</strong>: The icon to display before the label for the file picker/browse button. Defaults to <em><i class="bi-folder2-open"></i></em></li>
+<li><strong>data-remove-label</strong>: The label to display for the file remove button. Defaults to <em>Remove</em>.</li>
+<li><strong>data-remove-icon</strong>: The icon to display before the label for the file remove button. Defaults to <em><i class="glyphicon glyphicon-trash"></i> &nbsp;</em>.</li>
+<li><strong>data-cancel-label</strong>: The label to display for the file upload cancel button. Defaults to <em>Cancel</em>.</li>
+<li><strong>data-cancel-icon</strong>: The icon to display before the label for the file upload cancel button. Defaults to <em><i class="bi-slash-circle"></i> &nbsp;</em>.</li>
+<li><strong>data-upload-label</strong>: The label to display for the file upload button. Defaults to <em>Upload</em>.</li>
+<li><strong>data-upload-icon</strong>: The icon to display before the label for the file upload button. Defaults to <em><i class="glyphicon glyphicon-upload"></i> &nbsp;</em>.</li>
+<li><strong>data-show-preview</strong>: Whether to display the file preview. It can be true or false. Defaults to <em>true</em>.</li>
+<li><strong>data-show-browse</strong>: Whether to display the file browse button. It can be true or false. Defaults to <em>true</em>.</li>
+<li><strong>data-show-remove</strong>: Whether to display the file remove/clear button. It can be true or false. Defaults to <em>true</em>.</li>
+<li><strong>data-show-upload</strong>: Whether to display the file upload button. It can be true or false. Defaults to <em>true</em>.</li>
+</ul>
+<h3>Krajee Star Rating <span id="krajee-star-rating"></span><a href="#krajee-star-rating" class="hashlink">&para;</a></h3><p>Display a Star Rating widget on any field with the <strong>.rating</strong> css class. Also, we can use a custom theme with the following css classes:</p>
+<ul>
+<li><strong>.rating-theme-fas</strong>: Font Awesome 5.x Theme</li>
+<li><strong>.rating-theme-uni</strong>: Unicode Theme</li>
+<li><strong>.rating-theme-gly</strong>: Glyphicons Theme</li>
+</ul>
+<p>We can customize this widget by using the following custom attributes:</p>
+<ul>
+<li><strong>data-container-class</strong>: The CSS class to be appended to the star rating container. This is useful if you want to prefix some CSS class to the container and override the plugin widget styling for your use case.</li>
+<li><strong>data-empty-star</strong>: The symbol markup to display for an empty star. Defaults to: <em><i class="glyphicon glyphicon-star-empty"></i></em></li>
+<li><strong>data-filled-star</strong>: The symbol markup to display for a filled / highlighted star: <em><i class="glyphicon glyphicon-star"></i></em></li>
+<li><strong>data-stars</strong>: The number of stars to display. Defaults to 5.</li>
+<li><strong>data-min</strong>: The minimum value for the rating input. Defaults to 0.</li>
+<li><strong>data-max</strong>: The maximum value for the rating input. Defaults to 5.</li>
+<li><strong>data-step</strong>: The step to increment the rating when each star is clicked. Defaults to 0.5.</li>
+<li><strong>data-rtl</strong>: Whether the rating input is to be oriented RIGHT TO LEFT. It can be true or false. Defaults to <em>false</em>.</li>
+<li><strong>data-show-caption</strong>: Whether the rating caption is to be displayed. It can be true or false. Defaults to true.</li>
+<li><strong>data-size</strong>: Size of the rating control. One of xl, lg, md, sm, or xs. Defaults to <em>md</em>.</li>
+<li><strong>data-default-caption</strong>: The default caption text, which will be displayed when no caption is set up for the rating. Defaults to <em>{rating} Stars</em>.</li>
+<li><strong>data-star-caption</strong>: The caption text corresponding to one star. Defaults to <em>One star</em>.</li>
+<li><strong>data-star-captions</strong>: The caption text corresponding to multiple star. Defaults to <em>{rating} stars</em>.</li>
+<li><strong>data-clear-button</strong>: The markup for displaying the clear button. Defaults to <em><i class="glyphicon glyphicon-minus-sign"></i></em></li>
+<li><strong>data-clear-button-title</strong>: The title displayed on clear button hover. Defaults to <em>Clear</em>.</li>
+<li><strong>data-clear-caption</strong>: The caption displayed when clear button is clicked. Defaults to <em>Not Rated</em>.</li>
+</ul>
+<h3>Select2 <span id="select2"></span><a href="#select2" class="hashlink">&para;</a></h3><p>Display a Select2 widget on a Select List field with the <strong>.select2</strong> css class.</p>
+<p>We can customize this widget by using the following custom attributes:</p>
+<ul>
+<li><strong>data-theme</strong>: The theme to be used by the widget. It can be <em>classic</em> or <em>bootstrap</em>. Defaults to <em>bootstrap</em>.</li>
+<li><strong>data-placeholder</strong>: The placeholder to be displayed when no option is selected. For example: "<em>Select a country</em>".</li>
+<li><strong>data-allow-clear</strong>: Allows the user to clear the current selection. It should be used with "<em>data-placeholder</em>" to work. It can be true or false.</li>
+<li><strong>data-tags</strong>: Allows the user to create new options from text input by the user in the search box. It can be <em>true</em> or <em>false</em>.</li>
+<li><strong>data-maximum-selection-length</strong>: For example: 2</li>
+<li><strong>data-minimum-input-length</strong>: Only start searching when the user has input a number of characters. For example: 3</li>
+<li><strong>data-maximum-input-length</strong>: Allows you to limit the length of the search term such that it does not exceed a certain length. For example: 20</li>
+<li><strong>data-minimum-results-for-search</strong>: Allows you to hide the search box depending on the number of results. For example: 3.</li>
+</ul>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; Easy forms 2015 - 2024</p>
+        <p class="pull-right">
+            <small>Page generated on Sat, 23 Nov 2024 00:27:41 +0000</small>
+        </p>
+    </div>
+</footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>
