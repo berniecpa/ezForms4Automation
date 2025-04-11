@@ -12,7 +12,7 @@
     "rss": "https://support.easyforms.dev/feed"
   },
   "require": {
-    "php": ">=7.2.5",
+    "php": ">=8.2",
     "ext-curl": "*",
     "ext-dom": "*",
     "ext-iconv": "*",
